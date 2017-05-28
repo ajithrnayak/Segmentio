@@ -19,11 +19,11 @@ struct SegmentioBuilder {
         )
     }
     
-    static func updateContent(for segmentioView: Segmentio) {
+    static func updateContent(for segmentioView: Segmentio, at index: Int) {
         segmentioView.updateSegmentioItem(
             SegmentioItem(title: "Hurricane",
                           image: UIImage(named: "tornado")),
-            at: 0)
+            at: index)
     }
     
     static func buildSegmentioView(segmentioView: Segmentio, segmentioStyle: SegmentioStyle) {

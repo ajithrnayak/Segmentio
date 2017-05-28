@@ -67,7 +67,7 @@ class ExampleViewController: UIViewController {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
-            SegmentioBuilder.updateContent(for: self.segmentioView)
+            SegmentioBuilder.updateContent(for: self.segmentioView, at: 0)
         }
     }
     
