@@ -11,7 +11,7 @@ import Segmentio
 
 class ExampleViewController: UIViewController {
     
-    var segmentioStyle = SegmentioStyle.imageOverLabel
+    var segmentioStyle = SegmentioStyle.onlyLabel
     
     @IBOutlet fileprivate weak var segmentViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var segmentioView: Segmentio!
@@ -64,6 +64,10 @@ class ExampleViewController: UIViewController {
                     animated: true
                 )
             }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+            SegmentioBuilder.updateContent(for: self.segmentioView)
         }
     }
     

@@ -192,6 +192,11 @@ open class Segmentio: UIView {
         segmentioCollectionView?.reloadData()
     }
     
+    open func updateSegmentioItem(_ item: SegmentioItem, at index: Int) {
+        segmentioItems[index] = item
+        segmentioCollectionView?.reloadData()
+    }
+    
     // MARK: Collection view setup
     
     fileprivate func setupCellWithStyle(_ style: SegmentioStyle) {
