@@ -78,8 +78,7 @@ public struct SegmentioHorizontalSeparatorOptions {
     var height: CGFloat
     var color: UIColor
     
-    public init(type: SegmentioHorizontalSeparatorType = .topAndBottom, height: CGFloat = 1.0,
-                color: UIColor = .darkGray) {
+    public init(type: SegmentioHorizontalSeparatorType = .topAndBottom, height: CGFloat = 1.0, color: UIColor = .clear) {
         self.type = type
         self.height = height
         self.color = color

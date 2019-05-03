@@ -19,6 +19,13 @@ struct SegmentioBuilder {
         )
     }
     
+    static func updateContent(for segmentioView: Segmentio, at index: Int) {
+        segmentioView.updateSegmentioItem(
+            SegmentioItem(title: "Hurricane",
+                          image: UIImage(named: "tornado")),
+            at: index)
+    }
+    
     static func buildSegmentioView(segmentioView: Segmentio, segmentioStyle: SegmentioStyle, segmentioPosition: SegmentioPosition = .fixed(maxVisibleItems: 3)) {
         segmentioView.setup(
             content: segmentioContent(),
